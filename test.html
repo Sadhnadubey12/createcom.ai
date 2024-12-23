@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f9;
+      }
+
+      .pricing-table {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+      }
+
+      .pricing-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .pricing-card h3 {
+        margin-bottom: 10px;
+        font-size: 1.8em;
+        color: #333;
+      }
+
+      .price {
+        font-size: 2em;
+        color: #5d56f1;
+        margin: 10px 0;
+      }
+
+      .billed {
+        font-size: 0.9em;
+        color: #555;
+      }
+
+      .features {
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      .features li {
+        margin: 10px 0;
+        list-style: none;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .features li:before {
+        content: "\2713";
+        position: absolute;
+        left: 0;
+        color: #5d56f1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing-table">
+      <div class="pricing-card">
+        <h3>₹1,499 INR/month</h3>
+        <p class="billed">billed once yearly</p>
+        <p>Card rates starting at:</p>
+       
+          2% 3rd-party payment providers
+           <ul class="features">
+            Standout features
+            <li>10 inventory locations</li>
+            <li>24/7 chat support</li>
+            <li>Localized global selling (3 markets)</li>
+            <li>POS Lite</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>₹5,599 INR/month</h3>
+        <p class="billed">billed once yearly</p>
+        <p>Card rates starting at:</p>
+        <ul class="features">
+          <li>1% 3rd-party payment providers</li>
+          <li>10 inventory locations</li>
+          <li>24/7 chat support</li>
+          <li>Localized global selling (3 markets)</li>
+          <li>5 additional staff accounts</li>
+          <li>POS Lite</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>₹22,680 INR/month</h3>
+        <p class="billed">billed once yearly</p>
+        <p>Card rates starting at:</p>
+        <ul class="features">
+          <li>0.6% 3rd-party payment providers</li>
+          <li>Custom reports and analytics</li>
+          <li>10 inventory locations</li>
+          <li>Enhanced 24/7 chat support</li>
+          <li>
+            Localized global selling (3 markets) + add markets for $59 USD/mo
+            each
+          </li>
+          <li>15 additional staff accounts</li>
+          <li>10x checkout capacity</li>
+          <li>POS Lite</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>₹1,75,000 INR/month</h3>
+        <p class="billed">on a 3-year term</p>
+        <p>Card rates:</p>
+        <ul class="features">
+          <li>Competitive rates for high-volume merchants</li>
+          <li>Custom reports and analytics</li>
+          <li>200 inventory locations</li>
+          <li>Priority 24/7 phone support</li>
+          <li>Localized global selling (50 markets)</li>
+          <li>Unlimited staff accounts</li>
+          <li>Customizable checkout with 40x capacity</li>
+          <li>200 POS Pro locations with Shopify Payments</li>
+          <li>Sell wholesale/B2B</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
